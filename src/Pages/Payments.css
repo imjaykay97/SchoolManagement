@@ -1,0 +1,110 @@
+.payments-container-modern {
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Header & Search */
+.modern-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.header-text h1 { font-size: 34px; font-weight: 900; color: #fff; letter-spacing: -1px; }
+.red-glow { color: #e33411; text-shadow: 0 0 15px rgba(227, 52, 17, 0.3); }
+.header-text p { color: #555; font-size: 14px; margin-top: 5px; }
+
+.search-wrapper-modern {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+}
+
+.search-wrapper-modern:focus-within {
+  border-color: #e33411;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.search-wrapper-modern input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  width: 250px;
+}
+
+/* Stats Box */
+.stats-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-box-modern {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+.stat-box-modern:hover { transform: translateY(-5px); border-color: rgba(227, 52, 17, 0.2); }
+
+.icon-wrap { width: 50px; height: 50px; border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+.green-bg { background: rgba(46, 204, 113, 0.1); color: #2ecc71; }
+.red-bg { background: rgba(227, 52, 17, 0.1); color: #e33411; }
+.blue-bg { background: rgba(52, 152, 219, 0.1); color: #3498db; }
+
+.stat-box-modern p { color: #555; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+.stat-box-modern h2 { color: #fff; font-size: 26px; font-weight: 800; }
+.red-glow-text { color: #e33411 !important; text-shadow: 0 0 10px rgba(227, 52, 17, 0.2); }
+
+/* Modern Table */
+.glass-table-card {
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.modern-payment-table { width: 100%; border-collapse: collapse; }
+.modern-payment-table th { padding: 22px; text-align: left; background: rgba(0,0,0,0.2); color: #444; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+.modern-payment-table td { padding: 22px; border-bottom: 1px solid rgba(255,255,255,0.02); }
+
+.student-profile { display: flex; align-items: center; gap: 15px; }
+.avatar-init { width: 40px; height: 40px; background: #1a1a1a; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #e33411; font-weight: 800; border: 1px solid rgba(227, 52, 17, 0.2); }
+
+.name-bold { color: #fff; font-weight: 600; font-size: 15px; }
+.roll-dim { color: #555; font-size: 12px; font-weight: 700; margin-top: 2px; }
+.amount-bold { color: #fff; font-weight: 800; font-size: 16px; }
+.date-dim { color: #555; font-size: 13px; }
+
+/* Status Modern Pills */
+.pill-modern {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 100px; font-size: 11px; font-weight: 800; text-transform: uppercase;
+}
+.pill-modern .dot { width: 6px; height: 6px; border-radius: 50%; }
+.pill-modern.paid { background: rgba(46, 204, 113, 0.1); color: #2ecc71; }
+.pill-modern.paid .dot { background: #2ecc71; box-shadow: 0 0 8px #2ecc71; }
+.pill-modern.pending { background: rgba(227, 52, 17, 0.1); color: #e33411; }
+.pill-modern.pending .dot { background: #e33411; box-shadow: 0 0 8px #e33411; }
+
+/* Actions */
+.btn-action-pay {
+  background: #e33411; color: #fff; border: none; padding: 8px 18px; border-radius: 10px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.3s;
+}
+.btn-action-pay:hover { transform: scale(1.05); background: #ff4520; box-shadow: 0 10px 20px rgba(227, 52, 17, 0.3); }
+
+.label-verified { color: #2ecc71; font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 6px; }

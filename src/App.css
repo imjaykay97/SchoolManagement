@@ -1,0 +1,78 @@
+/* --- GOOGLE FONT IMPORT --- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-red: #e33411;
+  --bg-black: #000000;
+  --sidebar-width: 260px;
+  --glass-border: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-black);
+  color: #ffffff;
+  overflow: hidden; /* Screen level scroll rokne ke liye */
+}
+
+/* --- LAYOUT ENGINE --- */
+.modern-app-layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-black);
+}
+
+/* Sidebar fix rahega left mein */
+.main-viewport {
+  flex: 1;
+  margin-left: var(--sidebar-width); /* Sidebar ki jagah reserve */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* Content area jo scroll hoga */
+.content-container {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto; 
+  background: radial-gradient(circle at 80% 10%, rgba(227, 52, 17, 0.04), transparent 40%);
+}
+
+/* --- MODERN SCROLLBAR --- */
+.content-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.content-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content-container::-webkit-scrollbar-thumb {
+  background: rgba(227, 52, 17, 0.15);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.content-container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-red);
+}
+
+/* --- GLOBAL ANIMATIONS --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.content-container > div {
+  animation: fadeIn 0.4s ease-out forwards;
+}

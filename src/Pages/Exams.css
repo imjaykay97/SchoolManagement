@@ -1,0 +1,67 @@
+.exams-page-elite { padding: 40px; animation: fadeIn 0.5s ease-out; }
+
+/* Header & Tabs */
+.exams-header-modern { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; }
+.header-left h1 { font-size: 34px; font-weight: 900; color: #fff; letter-spacing: -1px; }
+.red-glow-text { color: #e33411; text-shadow: 0 0 15px rgba(227, 52, 17, 0.4); }
+.header-left p { color: #555; font-size: 14px; margin-top: 5px; }
+
+.tab-switcher-glass {
+  display: flex; background: rgba(255, 255, 255, 0.03); 
+  padding: 6px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.tab-link {
+  display: flex; align-items: center; gap: 8px; padding: 10px 20px;
+  border: none; background: transparent; color: #555; font-weight: 700;
+  cursor: pointer; transition: 0.3s; border-radius: 12px; font-size: 13px;
+}
+.tab-link.active { background: #e33411; color: #fff; box-shadow: 0 8px 15px rgba(227, 52, 17, 0.2); }
+
+/* Table Styling */
+.glass-table-wrapper {
+  background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 28px; overflow: hidden; backdrop-filter: blur(10px);
+}
+.elite-exam-table { width: 100%; border-collapse: collapse; }
+.elite-exam-table th { padding: 22px; text-align: left; background: rgba(0,0,0,0.3); color: #555; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+.elite-exam-table td { padding: 18px 22px; border-bottom: 1px solid rgba(255, 255, 255, 0.02); color: #aaa; font-size: 14px; }
+
+/* Cell Content */
+.subject-cell-elite, .student-cell-elite { display: flex; align-items: center; gap: 12px; color: #fff; font-weight: 600; }
+.icon-bg-red { width: 32px; height: 32px; background: rgba(227, 52, 17, 0.1); color: #e33411; display: flex; align-items: center; justify-content: center; border-radius: 8px; }
+.avatar-circle-sm { width: 32px; height: 32px; background: #1a1a1a; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; color: #e33411; font-size: 12px; }
+
+.date-badge { background: rgba(255, 255, 255, 0.03); padding: 5px 12px; border-radius: 8px; font-size: 12px; color: #888; border: 1px solid rgba(255,255,255,0.05); }
+.room-tag { color: #e33411; font-weight: 700; font-size: 12px; }
+.marks-highlight { color: #2ecc71; font-weight: 800; font-size: 16px; }
+.total-text { color: #444; font-size: 12px; margin-left: 2px; }
+
+/* Grade Pills */
+.grade-pill { padding: 4px 12px; border-radius: 6px; font-size: 10px; font-weight: 900; text-transform: uppercase; }
+.grade-pill.a-plus { background: rgba(46, 204, 113, 0.1); color: #2ecc71; }
+.grade-pill.a { background: rgba(52, 152, 219, 0.1); color: #3498db; }
+.grade-pill.b-plus { background: rgba(241, 196, 15, 0.1); color: #f1c40f; }
+
+/* Modal & Buttons */
+.modal-overlay-blur { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); backdrop-filter: blur(12px); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.elite-exam-modal { background: #0d0d0d; border: 1px solid rgba(255, 255, 255, 0.05); width: 450px; padding: 35px; border-radius: 30px; box-shadow: 0 30px 60px rgba(0,0,0,0.8); animation: slideIn 0.4s ease-out; }
+
+.student-info-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.03); padding: 8px 15px; border-radius: 100px; margin-bottom: 25px; color: #888; font-size: 12px; font-weight: 600; border: 1px solid rgba(255,255,255,0.05); }
+
+.action-btns-row { display: flex; gap: 10px; }
+.icon-btn-edit, .icon-btn-delete { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); color: #444; padding: 8px; border-radius: 10px; cursor: pointer; transition: 0.3s; }
+.icon-btn-edit:hover { color: #fff; border-color: #fff; }
+.icon-btn-delete:hover { color: #e33411; border-color: #e33411; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* Reusing your form styles... */
+.compact-input-box { display: flex; flex-direction: column; gap: 8px; margin-bottom: 25px; }
+.compact-input-box label { font-size: 11px; color: #555; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+.input-with-icon { display: flex; align-items: center; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 0 15px; }
+.input-icon { color: #444; }
+.input-with-icon input { background: transparent; border: none; padding: 14px 10px; color: #fff; flex: 1; outline: none; }
+.modal-action-footer { display: flex; justify-content: flex-end; gap: 20px; }
+.action-btn-primary { background: #e33411; color: #fff; border: none; padding: 12px 28px; border-radius: 12px; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+.action-btn-secondary { background: transparent; border: none; color: #555; font-weight: 700; cursor: pointer; }

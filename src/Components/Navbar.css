@@ -1,0 +1,75 @@
+.top-navbar {
+  display: flex;
+  justify-content: space-between; /* Charo taraf balance */
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background: rgba(10, 10, 10, 0.8); /* Dark Glassmorphism */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+}
+
+/* Sidebar ke width ko compensate karne ke liye placeholder */
+.nav-placeholder {
+  min-width: 50px; /* Isse thoda adjust kar sakte ho agar content shift ho */
+  flex: 0 0 auto;
+}
+
+/* Heading ko Center karne ka main logic */
+.nav-center {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-center h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Right side alignment */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 auto;
+  min-width: 200px;
+  justify-content: flex-end;
+}
+
+.current-date {
+  color: #888;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  background: #2ecc71; /* Green dot for online status */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+.admin-tag {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
