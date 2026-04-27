@@ -1,0 +1,153 @@
+.payments-container-modern {
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.modern-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.header-text h1 { font-size: 34px; font-weight: 900; color: #fff; letter-spacing: -1px; }
+.red-glow { color: #e33411; text-shadow: 0 0 15px rgba(227, 52, 17, 0.3); }
+.header-text p { color: #555; font-size: 14px; margin-top: 5px; }
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Search Wrapper */
+.search-wrapper-modern {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+}
+
+.search-wrapper-modern input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  width: 250px;
+}
+
+/* Add Payment Button */
+.add-payment-btn {
+  background: linear-gradient(135deg, #e33411, #ff5f40);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(227, 52, 17, 0.3);
+}
+
+.add-payment-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(227, 52, 17, 0.4);
+}
+
+/* Stats Cards */
+.stats-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-box-modern {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+.stat-box-modern h2 { color: #fff; font-size: 26px; font-weight: 800; }
+.red-glow-text { color: #e33411 !important; text-shadow: 0 0 10px rgba(227, 52, 17, 0.2); }
+
+.icon-wrap { width: 50px; height: 50px; border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+.green-bg { background: rgba(46, 204, 113, 0.1); color: #2ecc71; }
+.red-bg { background: rgba(227, 52, 17, 0.1); color: #e33411; }
+.blue-bg { background: rgba(52, 152, 219, 0.1); color: #3498db; }
+
+/* Modal Glassmorphism */
+.glass-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.glass-modal-content {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 35px;
+  border-radius: 24px;
+  width: 480px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+.input-group input, .input-group select {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 14px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 5px;
+}
+
+.confirm-btn-payment {
+  width: 100%;
+  margin-top: 25px;
+  background: #e33411;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Table Section */
+.glass-table-card {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.modern-payment-table { width: 100%; border-collapse: collapse; }
+.modern-payment-table th { padding: 22px; text-align: left; background: rgba(0,0,0,0.2); color: #777; font-size: 11px; text-transform: uppercase; }
+.modern-payment-table td { padding: 22px; border-bottom: 1px solid rgba(255,255,255,0.02); }
+
+/* Status Pills */
+.pill-modern { padding: 6px 14px; border-radius: 100px; font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; gap: 8px; }
+.pill-modern.paid { background: rgba(46, 204, 113, 0.1); color: #2ecc71; }
+.pill-modern.pending { background: rgba(227, 52, 17, 0.1); color: #e33411; }
