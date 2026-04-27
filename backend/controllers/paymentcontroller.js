@@ -1,4 +1,4 @@
-const Payment = require('../models/payment'); // 'const' small letter mein kar diya
+const Payment = require('../models/Payment'); // 'const' small letter mein kar diya
 
 // @desc    Nayi payment record karne ke liye
 const addPayment = async (req, res) => {
